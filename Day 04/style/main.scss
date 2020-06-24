@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    button,
+    a {
+        cursor: pointer;
+    }
+}
+
+html {
+    font-size: 10px;
+}
+
+.header {
+    background: url(/images/background.png);
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+
+    &__content {
+        padding: 5rem 0;
+        text-align: inherit;
+        &--nav {
+            font-family: "Josefin Sans", sans-serif;
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 5rem;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .logo {
+                    font-size: 2rem;
+                }
+
+                .toggle {
+                    order: 1;
+                    ion-icon {
+                        font-size: 2.5rem;
+                    }
+                }
+
+                .menu {
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+                    list-style: none;
+                    display: none;
+                    order: 3;
+                    padding: 2rem 0;
+                    
+                    
+
+                    .list{
+                        display: block;
+                        flex-direction: wrap;
+
+                        .item {
+                            font-size: 1.5rem;
+                            padding: 0 3rem;
+                           
+    
+                            a {
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    .buttons {
+                        display: flex;
+                        align-items: center;
+    
+                        p {
+                            font-size: 1.5rem;
+                        }
+    
+                        span {
+                            padding: 0 1rem;
+    
+                            button {
+                                background-color: #fff;
+                                border: none;
+                                padding: 1rem 2rem;
+                                border-radius: 20px;
+                            }
+                        }
+    
+                        .logIn {
+                            background: none;
+                            color: #fff;
+                            text-decoration: underline #eee;
+                        }
+                    }
+
+                   
+                }
+
+                .menu.active {
+                    display: block;
+                }
+
+                
+            }
+        }
+
+        &--text {
+            position: relative;
+            margin: 5rem 0;
+            padding: 0 5rem;
+            .play {
+                padding: 5rem 0;
+                button {
+                    padding: 2.5rem 2.8rem;
+                    border-radius: 50%;
+                    background-color: #095ce5;
+                    color: #fff;
+                    border: none;
+
+                    ion-icon {
+                        font-size: 5rem;
+                    }
+                }
+            }
+            h1 {
+                font-family: "Josefin Sans", sans-serif;
+                font-size: 5rem;
+                font-weight: bold;
+            }
+
+            p {
+                padding-top: 3rem;
+                font-family: "Work Sans", sans-serif;
+                font-size: 1.3rem;
+                font-weight: 300;
+                line-height: 2rem;
+            }
+        }
+
+        .form {
+            form {
+                input {
+                    padding: 1rem;
+                    margin: 0 1rem;
+
+                    background-color: rgba(255, 255, 255, 0.164);
+                    border-radius: 20px;
+                    border: 1px solid rgba(255, 255, 255, 0.164);
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+                }
+
+                button {
+                    padding: 1rem 3rem;
+                    border-radius: 20px;
+                    background-color: #095ce5;
+                    color: #fff;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media all and (min-width: 770px) {
+    .header {
+        &__content {
+            &--nav {
+                nav {
+                    
+                    .logo {
+                        font-size: 2rem;
+                        
+                    }
+
+                    .toggle {
+                        display: none;
+                    }
+                    .menu {
+                        position: relative;
+                        display: flex;
+                         justify-content: space-between;
+                        
+                        
+                        .list{
+                            display: flex;
+                            position: relative;
+                            margin-right: auto;
+                            float: left;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (width: 768px) {
+    .header {
+        &__content {
+            &--nav {
+                nav {
+                    padding: 1rem 5rem;
+                    
+                }
+            }
+        }
+    }
+}
+

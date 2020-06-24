@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* button,
+* a {
+  cursor: pointer;
+}
+
+html {
+  font-size: 10px;
+}
+
+.header {
+  background: url(/images/background.png);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+}
+
+.header__content {
+  padding: 5rem 0;
+  text-align: inherit;
+}
+
+.header__content--nav {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.header__content--nav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header__content--nav nav .logo {
+  font-size: 2rem;
+}
+
+.header__content--nav nav .toggle {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.header__content--nav nav .toggle ion-icon {
+  font-size: 2.5rem;
+}
+
+.header__content--nav nav .menu {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  list-style: none;
+  display: none;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  padding: 2rem 0;
+}
+
+.header__content--nav nav .menu .list {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
+}
+
+.header__content--nav nav .menu .list .item {
+  font-size: 1.5rem;
+  padding: 0 3rem;
+}
+
+.header__content--nav nav .menu .list .item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__content--nav nav .menu .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__content--nav nav .menu .buttons p {
+  font-size: 1.5rem;
+}
+
+.header__content--nav nav .menu .buttons span {
+  padding: 0 1rem;
+}
+
+.header__content--nav nav .menu .buttons span button {
+  background-color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+}
+
+.header__content--nav nav .menu .buttons .logIn {
+  background: none;
+  color: #fff;
+  -webkit-text-decoration: underline #eee;
+          text-decoration: underline #eee;
+}
+
+.header__content--nav nav .menu.active {
+  display: block;
+}
+
+.header__content--text {
+  position: relative;
+  margin: 5rem 0;
+  padding: 0 5rem;
+}
+
+.header__content--text .play {
+  padding: 5rem 0;
+}
+
+.header__content--text .play button {
+  padding: 2.5rem 2.8rem;
+  border-radius: 50%;
+  background-color: #095ce5;
+  color: #fff;
+  border: none;
+}
+
+.header__content--text .play button ion-icon {
+  font-size: 5rem;
+}
+
+.header__content--text h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.header__content--text p {
+  padding-top: 3rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.header__content .form form input {
+  padding: 1rem;
+  margin: 0 1rem;
+  background-color: rgba(255, 255, 255, 0.164);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+}
+
+.header__content .form form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.header__content .form form input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.header__content .form form input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.header__content .form form input::placeholder {
+  color: #fff;
+}
+
+.header__content .form form button {
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  background-color: #095ce5;
+  color: #fff;
+  border: none;
+}
+
+@media all and (min-width: 770px) {
+  .header__content--nav nav .logo {
+    font-size: 2rem;
+  }
+  .header__content--nav nav .toggle {
+    display: none;
+  }
+  .header__content--nav nav .menu {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__content--nav nav .menu .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin-right: auto;
+    float: left;
+  }
+}
+
+@media all and (width: 768px) {
+  .header__content--nav nav {
+    padding: 1rem 5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
