@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    button,
+    a {
+        cursor: pointer;
+    }
+}
+
+html {
+    font-size: 10px;
+}
+
+body{
+    background-color: #314cb1;
+}
+.header {
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+    color: #fff;
+
+    &__content {
+        padding:5rem 8rem;
+       
+       
+        &--nav {
+            font-family: "Josefin Sans", sans-serif;
+           display: block;
+            align-content: center;
+
+            .logo {
+                float: left;
+                font-size: 2rem;
+            }
+
+            nav {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                top: -3rem;
+                left:2rem;
+                padding: 2rem ;
+                
+                .menu {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    list-style: none;
+                   
+                        .item {
+                            font-size: 1.5rem;
+                            padding-right: 2rem;
+                            a {
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                        
+                    }
+ 
+                }
+                .avatar{
+                    display: block;
+                }
+
+            }
+        }
+
+        &--text {
+            position: relative;
+            margin: 8rem 0;
+          
+            .action {
+                padding: 5rem 0;
+                button {
+                    padding: 1.5rem 2.8rem;
+                    border-radius: 20px;
+                    color: #095ce5;
+                    background-color: #fff;
+                    border: none;
+                    font-weight: bold;
+                }
+            }
+            h1 {
+                font-family: "Josefin Sans", sans-serif;
+                font-size: 5rem;
+                font-weight: bold;
+                line-height: 6rem;
+            }
+
+        }
+
+        .features {
+            &__content {
+
+                display: flex;
+                
+                justify-content: space-between;
+                border-top:1px solid #fff;
+
+                .details {
+                   padding: 2rem 0;
+                   font-family: 'Work sans', sans-serif;
+
+                   p{
+                       padding: 1rem 0;
+                       font-size: 1.5rem;
+                       width: 90%;
+                   }
+                }
+
+                
+            }
+        }
+    }
+}
+
+
+@media all and (max-width:768px){
+    .header {
+        
+    
+    
+        &__content {
+            padding:5rem 1rem;
+           
+            &--nav {
+                .logo {
+                    float: none;
+                    font-size: 2rem;
+                }
+    
+                nav {            
+                    top: 2rem;
+                    left:0;
+                    padding: 0rem ;
+                }
+            }
+
+            .features {
+                &__content {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
