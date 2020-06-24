@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body{
+    background-color: #202020;
+}
+
+.registration {
+    display: flex;
+   
+    position: relative;
+  
+
+    .image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 100vh;
+        
+        span{
+            position: absolute;
+            left: 25%;
+            top: 80%;
+            transform: translate(-50%,-50%);
+
+            button{
+                padding: 2.5rem ;
+                border-radius: 50%;
+                background-color: #fff;
+                border:none;
+                text-align: center;
+                outline: none;
+                
+
+                ion-icon{
+                    color:#095ce5 ;
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    .form{
+        color: #fff;
+        position: relative;
+
+        &__content {
+           
+            position: absolute;
+            left: 55%;
+            top: 50%;
+            transform: translate(70%,-50%);
+    
+            .text{
+                h1{
+                    font-size:3.5rem ;
+                    padding: 1rem 0;
+                }
+    
+                p{
+                    font-size: 1.5rem;
+                    width: 30rem;
+                    padding: 1rem 0;
+                    line-height: 2.5rem;
+                }
+            }
+    
+            form {
+                .formIcon {
+                    position: relative;
+                    padding-right:  1rem;
+                    
+                    input {
+                        width: 31rem;
+                        border: 1px solid #a0a0a0;
+                        border-radius: 25px;
+                        margin: 8px 0;
+                        outline: none;
+                        padding: 8px;
+                        transition: 0.3s;
+                        padding: 1.5rem 0;
+                        padding-left: 3.3rem;
+                        background-color: #414141;
+                        color: #a0a0a0;
+    
+                        &:focus {
+                            border-color: dodgerblue;
+                            box-shadow: 0 0 8px 0 dodgerblue;
+                        }
+                    }
+    
+                    
+    
+                    input[type=password]{
+                        width: 15rem;
+                        
+                    }
+    
+                    input:focus + ion-icon {
+                        color: dodgerblue !important;
+                    }
+    
+                    ion-icon {
+                        position: absolute;
+                        left: 0;
+                        top: 13px;
+                        padding: 9px 8px;
+                        color: #a0a0a0;
+                        font-size: 2rem;
+                        transition: 0.3s;
+                    }
+                }
+                button{
+                    padding: 1.5rem 10.5rem;
+                    background-color: #fff;
+                    color:#095ce5 ;
+                    border-radius: 20px;
+                    border: none;
+                    font-weight: bold;
+                    outline: none;
+                }
+                .password{
+                    display: flex;
+                }
+            }
+        }
+        .policy{
+            padding: 2rem 2.5rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (max-width:765px){
+   .registration{
+       justify-content: center;
+    .image{
+        display: none;
+    }
+
+    .form{
+        position: relative;
+      &__content{
+        position: absolute;
+        transform: translate(-50%,30%);
+      }
+        
+    }
+   }
+}
