@@ -1,0 +1,4 @@
+font:proximaNova Bold;
+woodcolor:#bea67c;
+greycolor:#787877;
+ombre:#221e16

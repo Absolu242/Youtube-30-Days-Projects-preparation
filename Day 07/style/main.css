@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.SingleProduct {
+  position: relative;
+  height: 100vh;
+}
+
+.SingleProduct__content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 30%;
+  top: 15%;
+  -webkit-transform: translate(-30%, 10%);
+          transform: translate(-30%, 10%);
+}
+
+.SingleProduct__content--image img {
+  width: 40rem;
+  height: 40rem;
+}
+
+.SingleProduct__content--text {
+  position: relative;
+  text-align: center;
+}
+
+.SingleProduct__content--text .content {
+  position: absolute;
+  width: 30rem;
+  left: 15rem;
+  top: 20%;
+  -webkit-transform: translate(-20%, -15%);
+          transform: translate(-20%, -15%);
+}
+
+.SingleProduct__content--text .content h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 5rem;
+  font-weight: lighter;
+  line-height: 7rem;
+}
+
+.SingleProduct__content--text .content p {
+  font-family: 'Work sans', sans-serif;
+  padding: 2rem 0;
+}
+
+.SingleProduct__content--text .content p.price {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.SingleProduct__content--text .content p.description {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2.3rem;
+}
+
+.SingleProduct__content--text .content p.size {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.SingleProduct__content--text .content .actions .select {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  margin: 0 .5rem;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #e0e0e0;
+}
+
+.SingleProduct__content--text .content .actions .select::-ms-expand {
+  display: none;
+}
+
+.SingleProduct__content--text .content .actions button {
+  color: #fff;
+  background-color: #095ce5;
+  padding: 1rem;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin: 0 .5rem;
+}
+
+@media (max-width: 765px) {
+  .SingleProduct {
+    position: relative;
+  }
+  .SingleProduct__content {
+    position: absolute;
+    display: block;
+    left: 35%;
+    top: 10%;
+  }
+  .SingleProduct__content--image img {
+    width: 30rem;
+    height: 30rem;
+  }
+  .SingleProduct__content--text {
+    position: relative;
+    text-align: center;
+  }
+  .SingleProduct__content--text .content {
+    position: absolute;
+    top: 20%;
+    -webkit-transform: translate(-50%, 25%);
+            transform: translate(-50%, 25%);
+  }
+}
+/*# sourceMappingURL=main.css.map */
