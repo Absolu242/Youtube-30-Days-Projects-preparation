@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+.header{
+    background: url(/images/background.png);
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    text-align: center;
+    color:#fff;
+
+    &__content{
+        padding:5rem 0;
+        text-align: inherit;
+        &--title{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size:2rem;
+            
+        }
+
+        &--text{
+            margin: 15rem 0;
+            padding: 0 5rem;
+            h1{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size:4rem;
+            font-weight: lighter;
+            }
+
+            p{
+                padding-top: 3rem;
+                font-family: 'Work Sans', sans-serif;
+                font-size:1.3rem;
+                font-weight: 300;
+                line-height: 2rem;
+            }
+        }
+
+        .down{
+            ion-icon{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width:765px){
+    
+
+.header{
+    height:100vh;
+   
+
+    &__content{
+        
+        padding:1rem 0;
+    
+
+        &--text{
+            margin: 10rem 0;
+            padding: 0 1.5rem;
+            line-height: 5rem;
+            h1{
+            
+            font-size:4rem;
+            
+            }
+
+            p{
+                padding-top: 3rem;
+               
+            }
+        }
+    }
+}
+}

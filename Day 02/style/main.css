@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Lato' ,sans-serif;
 }
 
 html {
@@ -21,16 +22,16 @@ body {
 }
 
 .registration .image {
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 50%;
   height: 100vh;
+  background-image: url(images/image.png);
+  background-size: cover;
 }
 
 .registration .image span {
   position: absolute;
   left: 25%;
-  top: 80%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }

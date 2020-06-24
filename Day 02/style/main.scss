@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato' ,sans-serif;
 }
 
 html {
@@ -19,15 +20,17 @@ body{
   
 
     .image {
-        background-repeat: no-repeat;
-        background-size: cover;
         width: 50%;
         height: 100vh;
+        
+        background-image: url(images/image.png);
+        background-size: cover;
+        
         
         span{
             position: absolute;
             left: 25%;
-            top: 80%;
+            top: 50%;
             transform: translate(-50%,-50%);
 
             button{
